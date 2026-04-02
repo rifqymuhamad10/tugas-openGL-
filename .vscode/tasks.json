@@ -11,16 +11,20 @@
         "-L${workspaceFolder}/lib",
         "${workspaceFolder}/src/main.cpp",
         "${workspaceFolder}/src/glad.c",
+        "-lfreeglut",
         "-lglfw3",
         "-lopengl32",
+        "-lglu32",
         "-lgdi32",
+        "-lwinmm",
         "-o",
         "${workspaceFolder}/main.exe"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
-      }
+      },
+      "problemMatcher": ["$gcc"]
     }
   ]
 }
